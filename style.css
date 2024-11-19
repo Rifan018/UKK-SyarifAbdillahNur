@@ -1,0 +1,877 @@
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Header*/
+header {
+    background-color: bisque;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 40px;
+}
+
+.logo h1 {
+    font-size: 5rem;
+    color: orangered;
+    margin: 0 0 0 30px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.logoimg {
+    width: 100%;
+    max-width: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0 100px 0 0;
+}
+
+nav a {
+    background-color: red;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: crimson;
+    color: black;
+}
+
+/*Hero*/
+#hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+}
+
+.herotext {
+    margin: auto 0 auto 40px;
+}
+
+.herotext h1 {
+    font-size: 3.5rem;
+    margin: 0 0 30px 0;
+}
+
+.herotext p {
+    font-size: 1.5rem;
+    margin: 0 0 100px 0;
+}
+
+.herotext a {
+    background-color: red;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0 0 0 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.herotext a:hover {
+    background-color: crimson;
+    color: black;
+}
+
+#hero img {
+    margin: 20px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 5px 5px 8px black;
+    border-radius: 25px;
+}
+
+/*Produk*/
+#produk {
+    background-color: blanchedalmond;
+}
+
+#produk h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.listproduk {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.produk {
+    max-width: 350px;
+    margin: 0 0 40px 0;
+}
+
+.produk h3 {
+    font-size: 30px;
+    margin: 20px 0 10px 0;
+}
+
+.produk p {
+    font-size: 1.2rem;
+}
+
+.produk img {
+    max-width: 100%;
+    box-shadow: 5px 5px 8px black;
+    border-radius: 25px;
+}
+
+/*Testimoni*/
+#testimoni {
+    background-color: beige;
+}
+
+#testimoni h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.listtesti {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.testi {
+    max-width: 250px;
+    margin: 0 0 40px 0;
+}
+
+.testi h3 {
+    font-size: 30px;
+    margin: 20px 0 10px 0;
+}
+
+.testi p {
+    font-size: 1.2rem;
+}
+
+.testi img {
+    max-width: 100%;
+    box-shadow: 5px 5px 8px black;
+    border-radius: 25px;
+}
+
+/*Kontak*/
+#kontak {
+    background-color: burlywood;
+}
+
+#kontak h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+form input,
+form textarea {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    width: 20%;
+}
+
+.btnkp {
+    display: flex;
+    margin: 5px auto 10px auto;
+    font-size: 1.3rem;
+}
+
+/*Footer*/
+footer {
+    background-color: rgb(82, 36, 10);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fb {
+    margin: 5px 0 0 0;
+    width: 100%;
+    max-width: 30px;
+}
+
+.fb:hover {
+    transform: scale(1.2);
+}
+
+.foottext {
+    margin: 5px 0 10px 0;
+}
+
+.foottext p {
+    color: rgb(133, 133, 133);
+    font-size: 1rem;
+}
+
+@media (max-width: 1440px) {
+    .logoimg {
+        max-width: 150px;
+    }
+
+    .logo h1 {
+        font-size: 4rem;
+        color: orangered;
+    }
+
+
+    nav ul {
+        gap: 10px;
+        margin: 0 20px 0 0;
+    }
+
+    #hero img {
+        max-width: 450px;
+    }
+
+    .herotext h1 {
+        font-size: 3.3rem;
+        margin: 0 0 10px 0;
+    }
+
+    .herotext p {
+        font-size: 1.4rem;
+        margin: 0 0 40px 0;
+    }
+
+    .herotext a {
+        margin: 0 0 0 100px;
+        border-radius: 15px;
+    }
+
+    .herotext {
+        margin: auto 0 auto 5px;
+    }
+
+
+    .produk {
+        max-width: 300px;
+        margin: 0 0 40px 0;
+    }
+
+    .testi {
+        max-width: 300px;
+        margin: 0 0 40px 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    .logoimg {
+        max-width: 100px;
+    }
+
+    .logo h1 {
+        font-size: 3.5rem;
+    }
+
+    nav a {
+        padding: 15px;
+    }
+
+    .produk {
+        max-width: 250px;
+        margin: 0 0 20px 0;
+    }
+
+    .testi {
+        max-width: 250px;
+        margin: 0 0 20px 0;
+    }
+
+    .produk h3 {
+        font-size: 25px;
+        margin: 20px 0 10px 0;
+    }
+
+    .produk p {
+        font-size: 1rem;
+    }
+
+    .testi h3 {
+        font-size: 25px;
+        margin: 20px 0 10px 0;
+    }
+
+    .testi p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .logo {
+        margin: 5px 0 0 10px;
+    }
+
+    .logo h1 {
+        font-size: 3.3rem;
+    }
+
+    #hero img {
+        max-width: 350px;
+    }
+
+    .herotext h1 {
+        font-size: 2.5rem;
+        margin: 0 0 10px 0;
+    }
+
+    .herotext p {
+        font-size: 1.2rem;
+        margin: 0 0 20px 0;
+    }
+
+    .herotext a {
+        margin: 0 0 0 100px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 940px) {
+    .logoimg {
+        max-width: 80px;
+    }
+
+    .logo h1 {
+        font-size: 2.5rem;
+        margin: 0 0 0 10px;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    #hero img {
+        max-width: 300px;
+    }
+
+    .herotext h1 {
+        font-size: 2rem;
+        margin: 0 0 10px 0;
+    }
+
+    .herotext p {
+        font-size: 0.9rem;
+        margin: 0 0 25px 0;
+    }
+
+    .herotext a {
+        padding: 10px;
+        margin: 0 0 0 50px;
+        border-radius: 10px;
+    }
+
+    .foottext p {
+        font-size: 0.8rem;
+    }
+
+    .listproduk {
+        justify-content: space-evenly;
+    }
+
+    #produk h1 {
+        font-size: 1.8rem;
+    }
+
+    .produk {
+        max-width: 230px;
+    }
+
+    .produk h3 {
+        font-size: 1.4rem;
+    }
+
+    .produk p {
+        font-size: 1rem;
+    }
+
+    #testimoni h1 {
+        font-size: 1.8rem;
+    }
+
+    .listtesti {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .testi {
+        max-width: 200px;
+    }
+
+    .testi h3 {
+        font-size: 1.3rem;
+    }
+
+    .testi p {
+        font-size: 0.9rem;
+    }
+
+    #kontak h1 {
+        font-size: 1.8rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+        width: 30%;
+    }
+
+    .btnkp {
+        margin: 2px auto 5px auto;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav a {
+        padding: 10px;
+        font-size: 0.6rem;
+    }
+
+    .logo {
+        margin: 3px 3px 0 5px;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .nav ul {
+        font-size: 0.8rem;
+    }
+
+     #hero img {
+        max-width: 300px;
+    }
+
+    .herotext h1 {
+        font-size: 1.8rem;
+        margin: 0 0 7px 0;
+    }
+
+    .herotext p {
+        font-size: 0.8rem;
+        margin: 0 0 25px 0;
+    }
+
+    .herotext a {
+        padding: 7px;
+        margin: 0 0 0 30px;
+        border-radius: 10px;
+    }
+
+    #produk h1 {
+        font-size: 2.3rem;
+        padding: 20px;
+    }
+
+    .produk {
+        max-width: 30%;
+    }
+
+    .produk img {
+        max-width: 190px;
+    }
+
+    .produk h3 {
+        font-size: 1.4rem;
+        margin: 10px 0 5px 0;
+    }
+
+    .produk p {
+        font-size: 1rem;
+    }
+
+
+    #testimoni h1 {
+        font-size: 2.3rem;
+        padding: 15px;
+    }
+
+    .testi h3 {
+        font-size: 1.5rem;
+        margin: 10px 0 5px 0;
+    }
+
+    .testi p {
+        font-size: 1.1rem;
+    }
+
+    .testi {
+        max-width: 45%;
+    }
+
+    .testi img {
+        max-width: 200px;
+    }
+
+    #kontak h1 {
+        font-size: 2.3rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logoimg {
+        max-width: 60px;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        gap: 5px;
+        margin: 0 5px 0 0;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 0.5rem;
+    }
+
+    #hero img {
+        max-width: 200px;
+    }
+
+    .herotext h1 {
+        font-size: 1.5rem;
+        margin: 0 0 5px 0;
+    }
+
+    .herotext p {
+        font-size: 0.8rem;
+        margin: 0 0 15px 0;
+    }
+
+    .herotext a {
+        padding: 5px;
+        margin: 0 0 0 30px;
+        border-radius: 7px;
+        font-size: 1.2rem;
+    }
+
+    .listproduk {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produk {
+        max-width: 85%;
+    }
+
+    .produk img {
+        max-width: 200px;
+        box-shadow: 3px 3px 6px black;
+    }
+
+    .produk h3 {
+        font-size: 1.7rem;
+    }
+
+    .produk p {
+        font-size: 1rem;
+    }
+
+    .testi h3 {
+        font-size: 1.7rem;
+    }
+
+    .testi p {
+        font-size: 1rem;
+    }
+
+    .testi {
+        max-width: 45%;
+    }
+
+    .testi img {
+        max-width: 200px;
+        box-shadow: 3px 3px 6px black;
+    }
+
+    form {
+        gap: 2px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+        width: 50%;
+    }
+
+    .btnkp {
+        font-size: 1rem;
+    }
+
+    footer a img {
+        max-width: 25px;
+    }
+
+    .foottext p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 3px;
+        margin: 0 3px 0 0;
+    }
+
+    nav a {
+        padding: 5px;
+        border-radius: 15px;
+        font-size: 0.5rem;
+    }
+
+    .logo {
+        margin: 1px 0 1px 5px;
+    }
+
+    .logoimg {
+        max-width: 50px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+        margin: 0 0 0 5px;
+    }
+
+    .herotext {
+        margin: auto 0 auto 10px;
+    }
+
+    .herotext h1 {
+        font-size: 1rem;
+        margin: 0 0 5px 0;
+    }
+
+    .herotext p {
+        font-size: 0.6rem;
+        margin: 0 0 15px 0;
+    }
+
+    .herotext a {
+        padding: 5px;
+        margin: 0 0 0 10px;
+        border-radius: 10px;
+    }
+
+    #hero img {
+        max-width: 150px;
+        box-shadow: 2px 2px 4px black;
+        border-radius: 15px;
+    }
+
+    #produk h1 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .listproduk {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produk {
+        max-width: 75%;
+    }
+
+    .produk img {
+        max-width: 150px;
+        box-shadow: 2px 2px 4px black;
+        border-radius: 15px;
+    }
+
+    .produk h3 {
+        font-size: 1.4rem;
+        margin: 6px 0 3px 0;
+    }
+
+    .produk p {
+        font-size: 0.9rem;
+    }
+
+    #testimoni h1 {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .testi h3 {
+        font-size: 1.4rem;
+        margin: 6px 0 3px 0;
+    }
+
+    .testi p {
+        font-size: 0.9rem;
+    }
+
+    .testi {
+        max-width: 45%;
+    }
+
+    .testi img {
+        max-width: 150px;
+        box-shadow: 2px 2px 4px black;
+        border-radius: 15px;
+    }
+
+    #kontak h1 {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    form {
+        gap: 1px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.7rem;
+        width: 30%;
+    }
+
+    .btnkp {
+        margin: 2px auto 5px auto;
+        font-size: 0.8rem;
+    }
+
+    footer a img {
+        margin: 3px 0 0 0;
+        max-width: 15px;
+    }
+
+    .foottext {
+        margin: 2px 0 5px 0;
+    }
+
+    .foottext p {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        margin: 0 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .herotext h1 {
+        font-size: 0.8rem;
+    }
+
+    .herotext p {
+        font-size: 0.5rem;
+        margin: 0;
+    }
+
+    .herotext a {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 0.6rem;
+    }
+
+    #hero img {
+        max-width: 100px;
+        box-shadow: 2px 2px 4px black;
+        border-radius: 15px;
+        margin: 14px;
+    }
+
+    #produk h1 {
+        font-size: 1.3rem;
+        padding: 5px;
+    }
+
+    .produk img {
+        max-width: 100px;
+        border-radius: 10px;
+    }
+
+    .produk h3 {
+        font-size: 1.1rem;
+    }
+
+    .produk p {
+        font-size: 0.6rem;
+    }
+
+    #testimoni h1 {
+        font-size: 1.3rem;
+        padding: 5px;
+    }
+
+    .testi h3 {
+        font-size: 1.1rem;
+    }
+
+    .testi p {
+        font-size: 0.6rem;
+    }
+
+    .testi {
+        max-width: 45%;
+    }
+
+    .testi img {
+        max-width: 100px;
+        border-radius: 10px;
+    }
+
+    #kontak h1 {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    form {
+        gap: 1px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.5rem;
+    }
+
+    .btnkp {
+        font-size: 0.6rem;
+    }
+
+    .foottext p {
+        font-size: 0.4rem;
+    }
+}
